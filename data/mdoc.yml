@@ -1,0 +1,47 @@
+--- # http://mdocml.bsd.lv/man/mdoc.7.html
+Ad:
+  name: Memory Address
+An:
+  name: Author Name
+br:
+  name: Line Break
+Dd:
+  name: Document Date
+  example: '`$Mdocdate: June 28 2015 $`'
+  format:
+    - month day, year
+    - '$Mdocdate: month day year $'
+Dt:
+  name: Document Title
+Ev:
+  name: Environmental Variable
+Lk:
+  name: Hyperlink
+  example: http://www.example.org
+Ms:
+  name: Mathematical Symbol
+Mt:
+  name: '"mailto" Hyperlink'
+Nd:
+  name: Document Description
+  restrictions:
+    - one line
+Nm:
+  name: Document Name
+  restrictions:
+    - one argument
+Os:
+  name: Operating System Version
+Sh:
+  name: Section Header
+  restrictions:
+    - one line
+sp:
+  name: Vertical Space
+Ss:
+  name: Subsection Header
+  restrictions:
+    - one line
+Sy:
+  name: Symbolic Emphasis
+  example: __Symbolic Emphasis__
