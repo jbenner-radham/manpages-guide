@@ -17,6 +17,10 @@ Bl:
     - '-item'
     - '-ohang'
     - '-tag'
+  options:
+    - '-compact'
+    - '-offset <val>'
+    - '-width <val>'
 br:
   name: Line Break
 Dd:
