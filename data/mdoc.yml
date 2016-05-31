@@ -3,6 +3,20 @@ Ad:
   name: Memory Address
 An:
   name: Author Name
+Bl:
+  name: Begin List
+  one-required:
+    - '-bullet'
+    - '-column'
+    - '-dash'
+    - '-diag'
+    - '-enum'
+    - '-hang'
+    - '-hyphen'
+    - '-inset'
+    - '-item'
+    - '-ohang'
+    - '-tag'
 br:
   name: Line Break
 Dd:
@@ -13,8 +27,12 @@ Dd:
     - '$Mdocdate: month day year $'
 Dt:
   name: Document Title
+El:
+  name: End List
 Ev:
   name: Environmental Variable
+It:
+  name: List Item
 Lk:
   name: Hyperlink
   example: http://www.example.org
@@ -32,6 +50,10 @@ Nm:
     - one argument
 Os:
   name: Operating System Version
+Pp:
+  name: Paragraph Break
+Pq:
+  name: Parenthesised Enclosure
 Sh:
   name: Section Header
   restrictions:
