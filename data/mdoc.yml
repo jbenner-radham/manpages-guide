@@ -54,6 +54,8 @@ Nm:
     - one argument
 Os:
   name: Operating System Version
+  format:
+    - '[system [version]]'
 Pp:
   name: Paragraph Break
 Pq:
