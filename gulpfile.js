@@ -10,15 +10,15 @@ const yaml        = require('js-yaml');
 
 gulp.task('js', () => {
     return gulp.src('src/js/**/*.js')
-        .pipe($.eslint())
-        .pipe($.eslint.format())
-        .pipe($.eslint.failAfterError())
-        .pipe($.plumber())
-        .pipe($.sourcemaps.init())
-        .pipe($.babel())
-        .pipe($.sourcemaps.write('.'))
-        .pipe(gulp.dest('dist'))
-        .pipe(browserSync.reload({stream: true}));
+               .pipe($.eslint())
+               .pipe($.eslint.format())
+               .pipe($.eslint.failAfterError())
+               .pipe($.plumber())
+               .pipe($.sourcemaps.init())
+               .pipe($.babel())
+               .pipe($.sourcemaps.write('.'))
+               .pipe(gulp.dest('dist'))
+               .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('serve', ['js'], () => {
@@ -43,11 +43,17 @@ gulp.task('handlebars', () => {
     let tidyrc = yaml.load(fs.readFileSync('./.tidyrc').toString());
 
     return gulp.src('./src/templates/**/*.hbs')
-        .pipe($.stachio({author: author, timestamp: dateTime()}))
-        .pipe($.htmlhint())
-        .pipe($.htmlhint.reporter())
-        .pipe($.htmltidy(tidyrc))
-        .pipe(gulp.dest('./dist'));
+               .pipe($.stachio({author: author, timestamp: dateTime()}))
+               .pipe($.htmlhint())
+               .pipe($.htmlhint.reporter())
+               .pipe($.htmltidy(tidyrc))
+               .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('yaml', () => {
+    return gulp.src('./data/*.yml')
+               .pipe($.yaml({space: 4}))
+               .pipe(gulp.dest('./data/'));
 });
 
 gulp.task('default', ['serve']);

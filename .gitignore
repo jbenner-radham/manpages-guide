@@ -1,5 +1,6 @@
-# Build directory
+# Build files & directory
 dist
+data/*.json
 
 # Logs
 logs
