@@ -1,2 +1,2 @@
 # manpages-guide
-A guide for writting manpages.
+A guide for writing manpages using mdoc.

@@ -2,28 +2,96 @@ Quotes and Enclosures
 =====================
 Quotations and enclosure symbols for text.
 
-### Elements
+Table of Contents
+-----------------
+- [`Aq` - Angle Quotes](#aq)
+- [`Bq` - Brackets](#bq)
+- [`Brq` - Curly Braces](#brq)
+- [`Dq` - Double Quotes](#dq)
+- [`Pq` - Parentheses](#pq)
+- [`Qq` - &ldquo;Typewriter&rdquo; Quotes](#qq)
+- [`Sq` - Single Quotes](#sq)
 
-#### `Aq`
+`Aq`
+----
 Enclose in angle brackets.
 
-#### `Dq`
-Enclose in typographic double quotes.
-
-### Example Markup
-
-#### mdoc
+### Markup
 ```mdoc
 .Aq 123
 ```
 
-#### Output
+### Output
 > &lang;123&rang;
 
-#### mdoc
+`Bq`
+----
+Enclose in square brackets.
+
+### Markup
 ```mdoc
-.Dq "%a, %d %b %Y %T GMT"
+.Bq Hello, world.
 ```
 
-#### Output
-> ``%a, %d %b %Y %T GMT''
+### Output
+> [Hello, world.]
+
+`Brq`
+-----
+Enclose in curly braces.
+
+### Markup
+```mdoc
+.Brq Hello, world.
+```
+
+### Output
+> {Hello, world.}
+
+`Dq`
+----
+Enclose in typographic double quotes.
+
+### Markup
+```mdoc
+.Dq Hello, world.
+```
+
+### Output
+> ``Hello, world.''
+
+`Pq`
+----
+Enclose in parentheses.
+
+### Markup
+```mdoc
+.Pq Hello, world.
+```
+
+### Output
+> (Hello, world.)
+
+`Qq`
+----
+Enclose in &ldquo;typewriter&rdquo; double quotes.
+
+### Markup
+```mdoc
+.Qq Hello, world.
+```
+
+### Output
+> "Hello, world."
+
+`Sq`
+----
+Enclose in single quotes.
+
+### Markup
+```mdoc
+.Sq Hello, world.
+```
+
+### Output
+> `Hello, world.'
