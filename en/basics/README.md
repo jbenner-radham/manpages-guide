@@ -29,13 +29,13 @@ The first line represents the date of authorship with the `.Dd` macro using the 
 .Dd June 5, 2016
 ```
 
-The second line represents the document title, with the manual section (we'll discuss this more later) provided as the second argument.
+The second line represents the document title using the `.Dt` macro, with the manual section (we'll discuss this more later) provided as the second argument.
 
 ```mdoc
 .Dt MAN-MINIMAL 1
 ```
 
-The third line simply displays the operating system version in the document footer.
+The third line simply displays the operating system version in the document footer via the `.Os` macro.
 
 ```mdoc
 .Os
@@ -48,19 +48,19 @@ This is merely an empty "comment" line. We'll discuss this more later as well.
 .\"
 ```
 
-The fifth line represents the "Name" section header.
+The fifth line represents the &ldquo;NAME&rdquo; section header using the `.Sh` macro.
 
 ```mdoc
 .Sh NAME
 ```
 
-The sixth line is the name of the manpage.
+The sixth line is the name of the manpage, specified by the `.Nm` macro.
 
 ```mdoc
 .Nm Hello, world!
 ```
 
-The seventh and final line of our document is a description of the manual's content.
+The seventh and final line of our document is a description of the manual's content using the `.Nd` macro.
 
 ```mdoc
 .Nd A salutation.
